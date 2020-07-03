@@ -1,0 +1,378 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+input, select,
+textarea, button {
+outline: none;
+}
+body{
+  background-color: lightblue;
+}
+header{
+  background-color:RGB(247, 60, 79, 1);
+  color: white;
+  
+  padding: 10px;
+}
+.logout{
+  text-align: right;
+}
+.logout:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.logout a {
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.title{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 4px 4px 1px RGB(42, 135, 142, 1);
+}
+.date-add{
+ background-color: RGB(247, 60, 79, 1);
+ padding-bottom: 20px;
+ border-bottom-left-radius: 50%;
+ border-bottom-right-radius: 50%;
+}
+.date {
+  text-align: center;
+  padding: 10px;
+  margin-top: -2px;
+  color: RGB(255, 255, 255, 0.8);
+}
+.day1 {
+  border: 10px solid RGB(255, 255, 255, 0.5);
+  background-color: RGB(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  padding-top: 8px;
+  font-size: 70px;
+}
+.day2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+}
+.add-link {
+  background-color: RGB(42, 135, 142, 1);
+  margin: 10px auto;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid white;
+  box-shadow: 4px 4px 1px white ;
+}
+.add-link a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.lists{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #666666;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 5px 1px RGB(42, 135, 142, 1);
+}
+
+.date-list{
+  color: #999999;
+  margin:auto 20px;
+}
+
+.info-list {
+  padding-right: 20px;
+}
+.description-list{
+  font-size: 15px;
+}
+.description-list::first-letter{
+  text-transform: uppercase;
+}
+
+.title-list{
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.info-list::first-letter{
+  text-transform: uppercase;
+}
+
+.delete-list{
+  position: absolute;
+  right: 15px;  
+  text-align: center;
+}
+.delete{
+  line-height: 0;
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  color: white;
+  border-radius: 3px;
+  background-color: RGB(42, 135, 142, 0.8);
+}
+.delete:hover{
+  cursor: pointer;
+  background-color: RGB(247, 60, 79, 1);
+}
+
+.list-not-done {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid RGB(42, 135, 142, 1);
+}
+.list-not-done:hover {
+  cursor: pointer;
+}
+
+.list-done {
+  height: 15px;
+  width: 15px;
+  background-color: RGB(247, 60, 79, 1);
+  border-radius: 50%;
+}
+.list-done:hover {
+  cursor: pointer;
+}
+
+.form-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-title{
+  margin: 30px 0 20px 0 ;
+  width: 80vw;
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.3);
+}
+.add-title:focus{
+  border: 2px solid RGB(247, 60, 79, 1);
+}
+.add-title::placeholder{
+  color: #999999;
+
+}
+
+textarea{
+  margin-bottom: 20px;
+  width: 80vw;
+  height: 60px;
+  background-color:white;
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.3);
+}
+textarea:focus{
+  border: 2px solid RGB(247, 60, 79, 1);
+}
+textarea::placeholder{
+  color: #999999;
+}
+
+.add {
+  background-color: RGB(42, 135, 142, 1);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.2);
+}
+.add:hover{
+  cursor: pointer;
+  background-color: RGB(247, 60, 79, 1);
+}
+
+.page{
+  background-color: RGB(247, 60, 79, 1);
+  color: white;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.buttons a {
+  border: 2px solid white;
+  color: white;
+  background-color: RGB(42, 135, 142, 1);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 10px;
+  width: 65px;
+  margin: 10px;
+  font-size: 13px;
+}
+.buttons a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.text-home{
+  width: 350px;
+  margin: 30px auto;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+.box{
+  background-color: RGB(42, 135, 142, 1);
+  width: 300px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid white;
+  box-shadow: 4px 4px 1px white ;
+  overflow: unset;
+}
+.box h3{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.box a{
+  color: RGB(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 87px;
+}
+.box a:hover{
+  text-decoration: underline;
+}
+.error{
+  margin-top: -15px;
+  width: 200px;
+  margin-left: 35px;
+  color: RGB(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.add-credentials{
+  margin: 5px 0 5px 35px ;
+  height: 25px;
+  padding: 5px;
+  width: 200px;
+  box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+form p {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+button[name=login], button[name=register] {
+  border: 2px solid white;
+  color: white;
+  background-color: RGB(42, 135, 142, 1);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 10px;
+  width: 65px;
+  margin: 20px auto 30px auto;
+  font-size: 13px;
+  display: block;
+}
+button[name=login]:hover, button[name=register]:hover{
+  cursor: pointer;
+  background-color: RGB(247, 60, 79, 1);
+}
+
+@media only screen and (min-width: 770px){
+  header {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    height: 18vh;
+    padding-right: 15px;
+  }
+  .title{
+    padding-top:0x;
+    margin-top: -5vh;
+  }
+  .date-add {
+    position: fixed;
+    left: 0;
+    top: 17vh;
+    height: 83vh;
+    width: 30vw;
+    background-color: RGB(42, 135, 142, 1);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 10vh;
+  }
+  .day1{
+    margin-bottom: 15px;
+  }
+  .add-link {
+    display: none;
+  }
+  .lists-container {
+    overflow: auto;
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    height: 80vh;
+    width: 69vw;
+    padding-right: 1vw;
+  }
+
+  .form-add {
+    position: fixed;
+    top: 60vh;
+    left: 5vw;
+  }
+  .add-title {
+    width: 14vw;
+    box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.3);
+    border: 2px solid RGB(0, 0, 0, 0.3);
+
+  }
+  textarea {
+    width: 20vw;
+    box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.3);
+    border: 2px solid RGB(0, 0, 0, 0.3);
+
+  }
+  .add {
+    border: 3px solid white;
+    box-shadow: 3px 3px 2px RGB(0, 0, 0, 0.2);
+  }
+}
